@@ -58,7 +58,7 @@ def read():  # 读取账号
     fun_dic = {}
     fun_list = []
     pattern = re.compile('\\s*(.*?)[\\s-]+([^\\s-]+)[\\s-]*(.*)')
-    with open('zhanghao.txt', 'r') as f:  # 注意！请把账号密码写在zhanghao.txt内
+    with open('config/account.txt', 'r') as f:  # 注意！请把账号密码写在zhanghao.txt内
         for line in f:
             result = pattern.findall(line)
             if len(result) != 0:
